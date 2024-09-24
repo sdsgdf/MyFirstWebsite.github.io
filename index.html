@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="C:\Users\User\Documents\МойПервыйСайт\images\78787.ico">
+    <meta charset="UTF-8">
+    <title>Моя первая веб-страница</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- Подключение Particles.js -->
+    <div id="particles-js"></div>
+
+    <!-- Основной контент страницы -->
+    <h1>Добро пожаловать на мой первый сайт!</h1>
+    <p style="text-align: center">Это моя первая веб-страница, созданная с помощью HTML.</p>
+
+    <!-- Размещение изображений -->
+    <div class="image-row">
+        <img src="images/pantone_320px_coastline.gif" alt="Пример изображения">
+        <img src="images/pantone_320px_lowtide.gif" alt="Пример изображения">
+    </div>
+
+    <!-- Ссылка на любимый сайт -->
+    <p style="margin: 0 20px;"><br> Посетите мой инстаграмм: <a
+            href="https://www.instagram.com/fosfor_dennitsa/">fosfor_dennitsa.com</a></p></br>
+
+    <div class="hobbies-goals">
+        <!-- Список хобби -->
+        <div class="box1">
+            <h2>Мои хобби:</h2>
+            <ul>
+                <li>Чтение</li>
+                <li>Программирование</li>
+                <li>Путешествия</li>
+            </ul>
+        </div>
+
+        <!-- Список целей -->
+        <div class="box2">
+            <h2>Мои цели:</h2>
+            <ol>
+                <li>Изучить HTML и CSS</li>
+                <li>Освоить JavaScript</li>
+                <li>Стать веб-разработчиком</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <img src="images/INSA-ZOOM-LA-1.gif" alt="Изображение 4" class="gallery-image" data-animation="jello">
+        <img src="images/FuckBoris.gif" alt="Изображение 1" class="gallery-image" data-animation="bounce">
+        <img src="images/ParisCropped-1000.gif" alt="Изображение 5" class="gallery-image" data-animation="flip">
+        <img src="images/ExtraboldGallery1.gif" alt="Изображение 7" class="gallery-image" data-animation="heartBeat">
+        <img src="images/GoingNowhere-crop.gif" alt="Изображение 2" class="gallery-image" data-animation="shakeX">
+        <img src="images/INFINITE-SELF-Crop2-1000.gif" alt="Изображение 3" class="gallery-image" data-animation="rubberBand">
+        <img src="images/PARIS.gif" alt="Изображение 6" class="gallery-image" data-animation="zoomIn">
+        <!-- <img src="images/INSA-UNGA-2.gif" alt="Изображение 8" class="gallery-image" data-animation="wobble"> -->
+        
+    </div>
+    
+    
+    <!-- Таблица расписания -->
+    <h2>Мое расписание на неделю:</h2>
+    <table border="1">
+        <tr>
+            <th>День</th>
+            <th>Задача</th>
+        </tr>
+        <tr>
+            <td>Понедельник</td>
+            <td>Изучение HTML</td>
+        </tr>
+        <tr>
+            <td>Вторник</td>
+            <td>Изучение CSS</td>
+        </tr>
+    </table>
+
+    
+
+    <!-- Форма обратной связи -->
+    <h2>Свяжитесь со мной:</h2>
+    <form id="contactForm">
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Отправить">
+    </form>
+
+
+    <!-- Видеоплеер -->
+    <h2>Мое любимое видео:</h2>
+    <video width="320" height="240" controls>
+        <source src="videos/GIF-ITI_clue.mp4" type="video/mp4">
+        Ваш браузер не поддерживает воспроизведение видео.
+    </video>
+
+    <!-- Аудиоплеер -->
+    <h2>Моя любимая песня:</h2>
+    <audio controls>
+        <source
+            src="C:\Users\User\Documents\МойПервыйСайт\audio\Whitney Houston - I Will Always Love You (Film Version).mp3"
+            type="audio/mpeg">
+        Ваш браузер не поддерживает воспроизведение аудио.
+    </audio>
+
+    <!-- Подключение скриптов -->
+    <script src="js/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('particles.js загружен - callback');
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-light">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget subscribe no-box">
+                        <h5 class="widget-title">COMPANY NAME<span></span></h5>
+                        <p>About the company, little discription will goes here.. </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Quick Links<span></span></h5>
+                        <ul class="thumbnail-widget">
+                            <li>
+                                <div class="thumb-content"><a href="#.">Get Started</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#.">Top Leaders</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#.">Success Stories</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#.">Event/Tickets</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#.">News</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#.">Lifestyle</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#.">About</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Get Started<span></span></h5>
+                        <p>Get access to your full Training and Marketing Suite.</p>
+                        <a class="btn" href="#." target="_blank">Register Now</a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Contact Us<span></span></h5>
+
+                        <p><a href="mailto:info@domain.com" title="glorythemes">info@domain.com</a></p>
+                        <ul class="social-footer2">
+                            <li class=""><a title="youtube" target="_blank" href="/"><img alt="youtube" width="30"
+                                        height="30" src=""></a></li>
+                            <li class=""><a href="/" target="_blank" title="Facebook"><img alt="Facebook" width="30"
+                                        height="30" src=""></a></li>
+                            <li class=""><a href="/" target="_blank" title="Twitter"><img alt="Twitter" width="30"
+                                        height="30" src=""></a></li>
+                            <li class=""><a title="instagram" target="_blank" href="/"><img alt="instagram" width="30"
+                                        height="30" src=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright Company Name © 2016. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
